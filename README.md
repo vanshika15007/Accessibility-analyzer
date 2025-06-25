@@ -1,4 +1,4 @@
-accessibility analyzer
+# accessibility analyzer
 A web-based tool to test any website’s accessibility using React (frontend) and Flask + Playwright + axe-core (backend).
 
 ✨ Features
