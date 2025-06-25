@@ -1,12 +1,44 @@
-# React + Vite
+accessibility analyzer
+A web-based tool to test any website’s accessibility using React (frontend) and Flask + Playwright + axe-core (backend).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+🔗 Test any live URL for accessibility issues
+📊 Severity levels: Critical, Serious, Moderate, Minor
+🧾 Highlights affected HTML elements
+📱 Responsive, clean UI
+⚡ Fast performance with Vite
+🚀 Getting Started
+Prerequisites
+Node.js
+Python 3.8+
+pip
+🔧 Installation
+Backend (Python)
+cd python-server
+python -m venv venv
+source venv/Scripts/activate   # or venv\Scripts\activate on Windows
+pip install flask flask-cors playwright
+playwright install
+python app.py
+Make sure axe.min.js is in the same folder as app.py.
 
-Currently, two official plugins are available:
+Frontend (React)
+bash
+Copy
+Edit
+cd client
+npm install
+npm run dev
+Open: http://localhost:5173
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠️ Technologies Used
+React + Vite
 
-## Expanding the ESLint configuration
+Flask + Playwright
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+axe-core
+
+HTML, CSS (inline styles)
+
+📝 License
+This project is licensed under the MIT License.
