@@ -25,7 +25,7 @@ function App() {
 
     try {
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 second timeout
+      const timeoutId = setTimeout(() => controller.abort(), 40000); // 40 second timeout
 
       const response = await fetch("https://accessibility-analyzer-backend-tzan.onrender.com/analyze", {
         method: "POST",
